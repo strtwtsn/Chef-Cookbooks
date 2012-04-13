@@ -6,6 +6,13 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+gem_package "pg" do
+  action :install
+end
+
+
+
 execute "Install Postgresql" do
 command <<-EOH
 add-apt-repository ppa:pitti/postgresql
